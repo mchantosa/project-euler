@@ -2,13 +2,13 @@
   "name": "project-euler",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "directories": {
     "lib": "lib",
     "test": "test"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint lib/.",
+    "lint:fix": "eslint lib/. --fix"
   },
   "repository": {
     "type": "git",
@@ -22,7 +22,8 @@
   "homepage": "https://github.com/mchantosa/project-euler#readme",
   "devDependencies": {
     "babel-eslint": "^10.1.0",
-    "eslint": "^8.12.0",
+    "eslint": "^7.12.1",
+    "eslint-cli": "^1.1.1",
     "jest": "^27.5.1"
   }
 }
